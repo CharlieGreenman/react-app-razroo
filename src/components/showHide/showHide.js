@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from "react";
 import { connect } from "react-redux";
 import {showBlock, hideBlock} from "../../actions/showHide.js"
-require("../../scss/core.scss");
+// require("../../scss/core.scss");
 
 class Form extends Component {
   constructor(props) {
