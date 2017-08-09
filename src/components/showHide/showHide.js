@@ -16,30 +16,20 @@ class Form extends Component {
     dispatch(showBlock);
   }
   handleClick(e){
-    console.log("click");
-    //was turning up as undefined
-    //solved by realizing have to use connect
-    //https://github.com/reactjs/redux/issues/916
     const{dispatch} = this.props;
     dispatch(showBlock());
     this.renderColorBlock();
-    console.log(dispatch(showBlock));
   }
   hideBlock(){
     const{dispatch} = this.props;
     dispatch(hideBlock());
-    console.log(dispatch(hideBlock));
   }
   showBlock(){
     const{dispatch} = this.props;
     dispatch(showBlock());
-    console.log(dispatch(showBlock));
-    // this.renderColorBlock();
   }
   renderColorBlock(){
     const{environment, dispatch} = this.props;
-    console.log("cur environment" + JSON.stringify(environment));
-    console.log("show environment" + environment.show);
     if(environment.show === true){
         return(
           <div className = "works">
