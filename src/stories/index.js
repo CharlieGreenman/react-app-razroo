@@ -10,6 +10,8 @@ import Form from "../components/showHide/showHide.js";
 import {Provider} from "react-redux";
 import configureStore from "../store/configureStore";
 
+const store = configureStore();
+
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
@@ -17,8 +19,8 @@ storiesOf('Button', module)
   .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
 
 storiesOf('Show Hide', module)
-  .add('with text', () =>
-  <Provider store={store}>
-    <Form></Form>
-  </Provider>
-  )
+  .addDecorator((getStory) => (<Provider store={store}>
+                                          { getStory() }
+                                 </Provider>
+                                   ))
+  .add('React Component', () => <Form />)
