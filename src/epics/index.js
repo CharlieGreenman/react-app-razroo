@@ -1,4 +1,4 @@
 import { combineEpics } from 'redux-observable';
 
-export default combineEpics(
+export const rootEpic = combineEpics(
 );
