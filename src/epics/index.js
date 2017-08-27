@@ -1,6 +1,8 @@
 import { combineEpics } from 'redux-observable';
 import { showHide } from './showHideEpic';
 
-export const rootEpic = combineEpics(
+const rootEpic = combineEpics(
   showHide
 );
+
+export default rootEpic;
