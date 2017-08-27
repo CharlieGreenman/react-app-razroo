@@ -1,3 +1,4 @@
+import 'rxjs';
 import { combineEpics } from 'redux-observable';
 import { showHide } from './showHideEpic';
 
