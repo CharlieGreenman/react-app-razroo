@@ -11,10 +11,7 @@ class Form extends Component {
     this.showBlock = this.showBlock.bind(this);
     this.renderColorBlock = this.renderColorBlock.bind(this);
   }
-  componentWillMount(){
-    const{dispatch} = this.props;
-    dispatch(showBlock);
-  }
+
   handleClick(e){
     const{dispatch} = this.props;
     dispatch(showBlock());

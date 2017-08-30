@@ -3,5 +3,8 @@ import { showBlock, hideBlock } from '../actions/showHide';
 
 export function showHide(action$) {
   return action$.ofType(ActionTypes.SHOW)
-    .map(action => showBlock)
+    .switchMap(action => {
+      console.log('action: ' + action);
+      showBlock(action$)
+    });
 };
