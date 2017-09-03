@@ -1,5 +1,5 @@
 import * as ActionTypes from '../constants/ActionTypes';
-import { showBlock, hideBlock } from '../actions/showHide';
+import { hideBlock } from '../actions/showHide';
 import { Observable } from 'rxjs/Observable';
 
 export function showHide(action$) {
