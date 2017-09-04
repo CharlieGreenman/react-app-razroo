@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import Form from "../../showHide.js";
 
 import {Provider} from "react-redux";
@@ -8,7 +9,7 @@ const store = configureStore();
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(
+  shallow(
     <Provider store={store}>
       <Form />
     </Provider>
