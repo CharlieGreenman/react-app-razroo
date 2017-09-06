@@ -10,8 +10,8 @@ class Form extends Component {
     this.hideBlock = this.hideBlock.bind(this);
     this.showBlock = this.showBlock.bind(this);
     this.renderColorBlock = this.renderColorBlock.bind(this);
-  }
-
+  };
+  
   handleClick(e){
     const{dispatch} = this.props;
     dispatch(showBlock());
