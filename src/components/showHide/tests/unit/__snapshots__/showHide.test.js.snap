@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div>
+  <div
+    className="works"
+  >
+    <button
+      className="show-hide-button"
+      id="show-block"
+      onClick={[Function]}
+      type="button"
+    >
+      show
+    </button>
+    <button
+      className="show-hide-button"
+      id="hide-block"
+      onClick={[Function]}
+      type="button"
+    >
+      Hide
+    </button>
+  </div>
+</div>
+`;
