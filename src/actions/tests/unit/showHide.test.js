@@ -13,3 +13,11 @@ it('should create an action to show the div block', function() {
   }
   expect(showBlock()).toEqual(expectedAction)
 });
+
+it('should create an action to hide the div block', function() {
+  const expectedAction = {
+    type: types.HIDE,
+    show: false
+  }
+  expect(hideBlock()).toEqual(expectedAction)
+});
