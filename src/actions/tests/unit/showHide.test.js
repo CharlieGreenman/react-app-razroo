@@ -4,3 +4,12 @@ import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
 import {showBlock, hideBlock} from '../../showHide.js';
+import * as types from "../../../constants/ActionTypes";
+
+it('should create an action to show the div block', function() {
+  const expectedAction = {
+    type: types.SHOW,
+    show: true
+  }
+  expect(showBlock()).toEqual(expectedAction)
+});
