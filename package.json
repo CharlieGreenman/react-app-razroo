@@ -15,11 +15,14 @@
   },
   "devDependencies": {
     "@storybook/react": "^3.2.3",
+    "bs-jest": "^0.2.0",
+    "bs-platform": "^2.1.0",
     "enzyme": "^2.9.1",
     "jest-cli": "^20.0.4",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.2",
     "react-router-dom": "^4.0.0-beta.8",
+    "reason-react": "^0.3.0",
     "reason-scripts": "^0.8.0",
     "redux-devtools": "^3.3.2"
   },
