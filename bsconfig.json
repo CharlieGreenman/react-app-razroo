@@ -1,5 +1,5 @@
 {
-  "name": "reason-scripts",
+  "name": "react-reason-app-razroo",
   "sources": ["src"],
   "bs-dependencies": ["reason-react", "bs-jest"],
   "reason": {

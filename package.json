@@ -27,6 +27,9 @@
     "redux-devtools": "^3.3.2"
   },
   "scripts": {
+    "clean-reason": "bsb -clean-world",
+    "build-reason": "bsb -make-world",
+    "watch-reason": "bsb -make-world -w",
     "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
