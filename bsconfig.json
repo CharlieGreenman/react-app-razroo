@@ -1,6 +1,6 @@
 {
   "name": "react-reason-app-razroo",
-  "sources": ["src"],
+  "sources": [{"dir": "src", "subdirs": true}],
   "bs-dependencies": ["reason-react", "bs-jest"],
   "reason": {
     "react-jsx": 2
