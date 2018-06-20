@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from "react";
+import React, {Component} from "react";
 import { connect } from "react-redux";
 import {showBlock, hideBlock} from "../../actions/showHide.js"
 // require("../../scss/core.scss");
@@ -11,7 +11,7 @@ class Form extends Component {
     this.showBlock = this.showBlock.bind(this);
     this.renderColorBlock = this.renderColorBlock.bind(this);
   };
-  
+
   handleClick(e){
     const{dispatch} = this.props;
     dispatch(showBlock());
