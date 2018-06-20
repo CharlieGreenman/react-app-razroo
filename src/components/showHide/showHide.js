@@ -26,7 +26,7 @@ class Form extends Component {
     dispatch(showBlock());
   }
   renderColorBlock(){
-    const{environment, dispatch} = this.props;
+    const{environment} = this.props;
     if(environment.show === true){
         return(
           <div className = "works">
@@ -44,7 +44,6 @@ class Form extends Component {
     );
   }
     render() {
-      const {dispatch} = this.props;
       return(
         <div>
         {this.renderColorBlock()}
